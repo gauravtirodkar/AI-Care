@@ -2,14 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./design.css">
 <title>VriddhaSeva</title>
 </head>
 <body>
 <!-- Landing Page-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" >
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">VriddhaSeva</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,25 +44,25 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
+      	<!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('./images/help2.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <p class="lead" style="color:black;"><b>VriddhaSeva is a non profitable organization which provides promt health services to elderly people in case of emergency at low cost.</b></p>
+          </div>
+        </div>
+
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+        <div class="carousel-item active" style="background-image: url('./images/cover_1.jpg');">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">First Slide</h2>
-            <p class="lead">This is a description for the first slide.</p>
+            <h2 class="display-4">Vriddha Seva</h2>
+            <p class="lead" style="color:black;"><b><p>VriddhaSeva’s innovation in artificial intelligence and data analytics enables personalized care to empower the senior citizens and their caretakers for independent lifestyle. </p></b>
           </div>
         </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Second Slide</h2>
-            <p class="lead">This is a description for the second slide.</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('./images/help.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">Third Slide</h2>
-            <p class="lead">This is a description for the third slide.</p>
+            <p class="lead" style="color:black;"><b>This is a description for the third slide.</p></b>
           </div>
         </div>
       </div>
@@ -85,7 +87,7 @@
 <div class="flip-card col-xl-4 col-lg-4 offset-lg-2 mr-3  ">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="./images/iot1.jpg" alt="Avatar" style="width:100%;height:100%;">
+        <img src="./images/hcl_blog.jpg" alt="Avatar" style="width:100%;height:100%;">
       </div>
       <div class="flip-card-back">
         <h1>John Doe</h1> 
@@ -98,7 +100,7 @@
 <div class="flip-card col-xl-4 col-lg-4 ">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="./images/iot1.jpg" alt="Avatar" style="width:100%;height:100%;">
+        <img src="./images/iot2.jpg" alt="Avatar" style="width:100%;height:100%;">
       </div>
       <div class="flip-card-back">
         <h1>John Doe</h1> 
@@ -116,67 +118,148 @@
 
 </section>
 
+<section id="charts">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+          <h3>Some heading</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique impedit labore, inventore nesciunt eum repudiandae asperiores iusto ex. Natus blanditiis est sit quod deserunt provident asperiores expedita inventore ea.
+        </div>
+        <div class="col-md-6">
+            <div style="width: 75%">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+      </div>
+      
+</div> 
 
+</section>
+
+
+<div style="width: 50%">
+	<canvas id="barChart"></canvas>
+</div>
+
+<!-- Counter -->
+<div class="counter">
+    <div class="container">
+        <div class="row">
+            <br/>
+           <div class="col text-center">
+          <h2>Bootstrap 4 counter</h2>
+          <p>counter to count up to a target number</p>
+          </div>
+          
+                   
+          
+        </div>
+          <div class="row text-center">
+                <div class="col">
+                <div class="counter">
+            <i class="fa fa-code fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+             <p class="count-text ">Our Customer</p>
+          </div>
+                </div>
+                    <div class="col">
+                     <div class="counter">
+            <i class="fa fa-coffee fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+            <p class="count-text ">Happy Clients</p>
+          </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter">
+            <i class="fa fa-lightbulb-o fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+            <p class="count-text ">Project Complete</p>
+          </div></div>
+                    <div class="col">
+                    <div class="counter">
+            <i class="fa fa-bug fa-2x"></i>
+            <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+            <p class="count-text ">Coffee With Clients</p>
+          </div>
+                    </div>
+               </div>
+      </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="./count.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/charts.js"></script>
+<script>
+	var barChart = {
+			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			datasets: [{
+				label: 'Dataset 1',
+				data: [10, 15, 20, 1, 3, 5],
+				backgroundColor: 'rgb(23, 125, 255)',
+			}],
+
+
+		};
+		window.onload = function() {
+			var ctx = document.getElementById('#barChart').getContext('2d');
+			window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart - Stacked'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+						}],
+						yAxes: [{
+							stacked: true
+						}]
+					}
+				}
+			});
+		};
+
+
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [10, 20, 20, 10],
+					backgroundColor: ['rgb(23, 125, 255)','rgb(13, 175, 55)','rgb(93, 25, 25)','rgb(27, 12, 25)'],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Red',
+					'Orange',
+					'Yellow',
+					'Green'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myPie = new Chart(ctx, config);
+		};
+		
+</script>
 </body>
 </html>
 
-<style>
-  .carousel-item {
-  height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/*******************************************
-    Services
-**********************************************/
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.serve{
-  background-color: aliceblue;
-}
-</style>
