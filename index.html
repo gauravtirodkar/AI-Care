@@ -23,14 +23,16 @@
                 </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="./medical.html">Medical</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#">Doctor</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+            <a class="nav-link" href="#">Relatives</a>
+          </li><li class="nav-item">
+              <a class="nav-link" href="./login.html">Login</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -80,12 +82,13 @@
 <!-- Services -->
 
 <section class="serve">
+  <div class="container">
 <div style="text-align: center; padding:10px;">
 <img src="./images/services.jpg" style="width:5%;height:10%;" class="image-center" >
 <h1>Services</h1>
 </div>
 <div class="row">
-<div class="flip-card col-xl-4 col-lg-4 offset-lg-2 mr-3  ">
+<div class="flip-card col-xl-4 col-lg-4 offset-lg-2 col-md-12 col-sm-12">
     <div class="flip-card-inner">
       <div class="flip-card-front">
         <img src="./images/hcl_blog.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -98,7 +101,7 @@
     </div>
 </div>
 
-<div class="flip-card col-xl-4 col-lg-4 ">
+<div class="flip-card col-xl-4 col-lg-4 col-md-12 col-sm-12">
     <div class="flip-card-inner">
       <div class="flip-card-front">
         <img src="./images/iot2.jpg" alt="Avatar" style="width:100%;height:100%;">
@@ -110,16 +113,15 @@
       </div>
     </div>
 </div>
+
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+</div>
+<br><br>
 
 </section>
 
 <section id="charts">
+    <br>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -134,7 +136,7 @@
       </div>
       
 </div> 
-
+<br><br>
 </section>
 
 
@@ -262,10 +264,7 @@
 			}
 		};
 
-		window.onload = function() {
-			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myPie = new Chart(ctx, config);
-		};
+		
 		
 </script>
 </body>

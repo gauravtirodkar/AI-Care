@@ -20,9 +20,9 @@
 **********************************************/
 .flip-card {
  background-color: transparent;
- width: 300px;
- height: 300px;
- perspective: 1000px;
+    width: 80%;
+    height: 300px;
+ padding:15px;
 }
 
 .flip-card-inner {
