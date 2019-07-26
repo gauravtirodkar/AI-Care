@@ -12,6 +12,7 @@
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
+ background-attachment: fixed;
 }
 
 /*******************************************
@@ -87,4 +88,37 @@
     float: none;
     display: table;
     color: #4ad1e5;
+}
+
+/******************
+Navbar
+******************/
+
+nav{
+    background-color: rgba(0,0,0,0.2);
+    font-size: 20px;
+}
+
+/********************
+        Charts
+********************/
+
+#charts{   
+    background: black;
+}
+
+.s_heading{
+    padding: 15px;
+    color : rgb(255, 255, 255);
+    font-size:30px;
+}
+
+.s_text{
+    padding: 15px;
+    font-size: 20px;    
+    color: rgb(218, 218, 161);
+}
+
+#canvas{
+    padding: 20px;
 }

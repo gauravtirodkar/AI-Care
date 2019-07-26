@@ -5,13 +5,13 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="./design.css">
-<title>VriddhaSeva</title>
+<title>वृद्ध सेवा </title>
 </head>
 <body>
 <!-- Landing Page-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" >
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top" >
     <div class="container">
-      <a class="navbar-brand" href="#">VriddhaSeva</a>
+      <a class="navbar-brand" href="#" style="font-size: 25px;">वृद्ध सेवा </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,25 +44,26 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-      	<!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./images/help2.jpg');">
-          <div class="carousel-caption d-none d-md-block">
-            <p class="lead" style="color:black;"><b>VriddhaSeva is a non profitable organization which provides promt health services to elderly people in case of emergency at low cost.</b></p>
-          </div>
-        </div>
-
+      	
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('./images/cover_1.jpg');">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Vriddha Seva</h2>
-            <p class="lead" style="color:black;"><b><p>VriddhaSeva’s innovation in artificial intelligence and data analytics enables personalized care to empower the senior citizens and their caretakers for independent lifestyle. </p></b>
+            <h2 class="display-4">वृद्ध सेवा </h2>
+            <p class="lead" ><b style="font-size:30px;">VriddhaSeva’s innovation in artificial intelligence and data analytics enables personalized care to empower the senior citizens and their caretakers for independent lifestyle.</b>
+          </div>
+        </div>
+
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('./images/help2.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <p class="lead"><b style="font-size:30px;">VriddhaSeva is a non profitable organization which provides promt health services to elderly people in case of emergency at low cost.</b>
           </div>
         </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('./images/help.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">Third Slide</h2>
-            <p class="lead" style="color:black;"><b>This is a description for the third slide.</p></b>
+            <p class="lead" ><b style="font-size:30px;"><b>This is a description for the third slide.</b>
           </div>
         </div>
       </div>
@@ -121,12 +122,12 @@
 <section id="charts">
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-          <h3>Some heading</h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique impedit labore, inventore nesciunt eum repudiandae asperiores iusto ex. Natus blanditiis est sit quod deserunt provident asperiores expedita inventore ea.
+        <div class="col-md-6">
+          <h3 class="s_heading">Some heading</h3>
+          <p class="s_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique impedit labore, inventore nesciunt eum repudiandae asperiores iusto ex. Natus blanditiis est sit quod deserunt provident asperiores expedita inventore ea.</p>
         </div>
         <div class="col-md-6">
-            <div style="width: 75%">
+            <div>
                 <canvas id="canvas"></canvas>
             </div>
         </div>
@@ -250,7 +251,14 @@
 				]
 			},
 			options: {
-				responsive: true
+				responsive: true,
+        legend: {
+            labels: {
+                fontColor: "white",
+                fontSize: 18
+            }
+        }
+        
 			}
 		};
 
