@@ -1,0 +1,3 @@
+[submodule "DiseasePrediction"]
+	path = DiseasePrediction
+	url = https://github.com/DioRook-Nest/DiseaseTreatmentSuggestion.git
