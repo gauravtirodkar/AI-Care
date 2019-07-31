@@ -142,9 +142,27 @@
           </div>
         </div>
       </div>
-    </section>
+      <?php
+    if(file_exists('DiseasePrediction/disease.txt')){
+      $file = file_get_contents('DiseasePrediction/disease.txt');
 
-      
+    
+      ?>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <h1 class="display-4">Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h1>
+        <p class="lead"></p>
+        <hr class="my-4">
+        <p>Symptom Graph to be added here.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>      </div>
+    </div>
+    <?php
+    }
+    ?>
+    </section>
+    
     
       <!-- FOOTER -->
       <footer class="section red darken-2 white-text center">
