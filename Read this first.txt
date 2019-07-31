@@ -29,3 +29,9 @@ git clone REPO_URL --recursive
 B) manually initialize and the submodules after the clone
 git clone REPO_URL
 git submodule update --init --recursive
+
+STEPS:
+1) git clone https://github.com/gauravtirodkar/AI-Care.git --recursive
+2) Change branch to tina_xampp
+3) git clone https://github.com/DioRook-Nest/DiseaseTreatmentSuggestion.git
+
