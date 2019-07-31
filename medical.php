@@ -21,11 +21,26 @@
 <title>वृद्ध सेवा</title>
 </head>
 <body>
+  <?php
+  session_start();
+
+   if($_SESSION['abcd']==1){
+  ?>
+  <div class="alert alert-info alert-dismissible fade show" role="alert">
+   <strong>BE CALM!</strong> You symptoms have been forwarded to your doctor.
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+   </button>
+   </div>
+   <?php
+  $_SESSION['abcd']=0; 
+  }
+   ?>
     <!-- NAVIGATION -->
   <nav class="blue darken-2">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Hello, Vishandas Mehta</a>
+            <a href="index.html" class="brand-logo">Vishandas Mehta</a>
             <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
               <i class="material-icons">menu</i>
             </a>
@@ -213,8 +228,8 @@
     
     
      
-      <button class='btn btn-danger' type=submit name=Click onClick="document.location.href='DiseasePrediction/symp1.php'">Click</button>
-      
+      <button class='btn btn-danger' type='submit' name='Click' onClick="document.location.href='DiseasePrediction/symp1.php'">Click</button>
+      <a href='DiseasePrediction/symp1.php'>CLICK</a>
         
     
       <!-- ADD USER MODAL -->
