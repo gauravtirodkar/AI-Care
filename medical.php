@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -186,6 +186,37 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col s12 m6 l3">
+
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel center">
+                <i class="fa fa-4x fa-thermometer-three-quarters"></i>
+              <h5>Body Temperature(in F)</h5>
+              <h3 class="count">99</h3>
+              <div class="progress grey lighten-1">
+                <div class="determinate blue lighten-1" style="width: 20%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel blue lighten-1 white-text center">
+                <i class="fa fa-4x fa-paper-plane"></i>
+              <h5>Send Report</h5>
+              <br>
+              <button class='btn btn-danger' type='submit' name='Click' onClick="document.location.href='DiseasePrediction/symp1.php'">Click</button>
+              <br><br>
+              <div class="progress grey lighten-1">
+                <div class="determinate white" style="width: 58%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+
+          </div>
+        </div>
       </section>
     
   
@@ -221,15 +252,6 @@
           </li>
         </ul>
       </div>
-    
-    
-    
-      
-    
-    
-     
-      <button class='btn btn-danger' type='submit' name='Click' onClick="document.location.href='DiseasePrediction/symp1.php'">Click</button>
-      <a href='DiseasePrediction/symp1.php'>CLICK</a>
         
     
       <!-- ADD USER MODAL -->

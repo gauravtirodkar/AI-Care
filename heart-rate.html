@@ -96,7 +96,8 @@
         </div>
     </div>
 </nav>
-
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 <!-- SECTION: VISITORS -->
 <!--MAIN HEART-RATE PATTERN DETECTION SECTION-->
@@ -108,6 +109,8 @@
                 <canvas id="chartContainer" style="height: 370px; width: 100%;"></canvas>
             </div>
         </div>
+
+
         <!-- Latest Comments -->
 
         <div class="col-md-3">
@@ -200,6 +203,8 @@
 <script src="js/chart.js"></script>
 
 <script>
+
+
     // Custom JS & jQuery here
     // HIDE SECTIONS
     $('section').hide();
@@ -281,48 +286,98 @@
         CKEDITOR.replace('body');
     }, 1000);
     // PRELOADER
-    /********************************************************************************/
-    //CHARTS
-    /********************************************************************************/
-    var data =  [67,73, 84, 77,79, 87, 98];
-    var sum = 0;
-    for(var i=0; i<data.length; i++){
-        sum += data[i];
-    }
-    var avg = parseInt(sum/data.length);
-    $('p#avg-heartrate').html(avg + " ");
-    var ctx = document.getElementById("chartContainer");
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-            datasets: [{
-                label: 'Heart-Rate',
-                data: [67,73, 84, 77,79, 87, 98],
-                backgroundColor:
-                    'rgba(54, 162, 235, 0.2)',
-                borderColor: [
-                    'rgba(54, 162, 235, 1)',
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        max: 120,
-                        min:45 ,
-                        stepSize: 5,
-                    }
-                }]
-            }
-        }
-    });
-    /********************************************************************************/
-    //END OF CHARTS
-    /********************************************************************************/
+
+    
+    window.onload = function () {
+
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+	title :{
+		text: "Dynamic Data"
+	},
+	axisY: {
+		includeZero: false
+	},      
+	data: [{
+		type: "line",
+		dataPoints: dps
+	}]
+});
+
+var xVal = 0;
+var yVal = 100; 
+var updateInterval = 1000;
+var dataLength = 20; // number of dataPoints visible at any point
+
+var updateChart = function (count) {
+
+	count = count || 1;
+
+	for (var j = 0; j < count; j++) {
+		yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+	}
+
+	if (dps.length > dataLength) {
+		dps.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+
+
+    // /********************************************************************************/
+
+    // //CHARTS
+    // /********************************************************************************/
+    // var data =  [67,73, 84, 77,79, 87, 98];
+    // var sum = 0;
+    // for(var i=0; i<data.length; i++){
+    //     sum += data[i];
+    // }
+    // var avg = parseInt(sum/data.length);
+    // $('p#avg-heartrate').html(avg + " ");
+    // var ctx = document.getElementById("chartContainer");
+    // var myChart = new Chart(ctx, {
+    //     type: 'bar',
+    //     data: {
+    //         labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    //         datasets: [{
+    //             label: 'Heart-Rate',
+    //             data: [67,73, 84, 77,79, 87, 98],
+    //             backgroundColor:
+    //                 'rgba(54, 162, 235, 0.2)',
+    //             borderColor: [
+    //                 'rgba(54, 162, 235, 1)',
+    //             ],
+    //             borderWidth: 1
+    //         }]
+    //     },
+    //     options: {
+    //         responsive: true,
+    //         scales: {
+    //             yAxes: [{
+    //                 ticks: {
+    //                     max: 120,
+    //                     min:45 ,
+    //                     stepSize: 5,
+    //                 }
+    //             }]
+    //         }
+    //     }
+    // });
+    // /********************************************************************************/
+    // //END OF CHARTS
+    // /********************************************************************************/
 </script>
 </body>
 
