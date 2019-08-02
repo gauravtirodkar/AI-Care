@@ -143,7 +143,7 @@
           </div>
         </div>
      
-
+        </div>
       <?php
     if(file_exists('DiseasePrediction/disease.txt')){
       $file = file_get_contents('DiseasePrediction/disease.txt');
@@ -151,7 +151,7 @@
     
       ?>
     <div class="card  mx-auto">
-      <div class=card-header><h2 class="display-5">Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h2></div>
+      <div class=card-header><h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3></div>
           
         
         <div class=card-body>
@@ -170,7 +170,7 @@
     <?php
     }
     ?>
-     </div>
+     
     </section>
     
     
@@ -194,7 +194,7 @@ crossorigin="anonymous"></script>
 
 <script>
 // Custom JS & jQuery here
-
+window.onload = function () {
 // HIDE SECTIONS
 $('section').hide();
 $('footer').hide();
@@ -295,6 +295,9 @@ CKEDITOR.replace('body');
 
 var ctx = document.getElementById('chartContainer').getContext('2d');
 new Chart(ctx, config);
+}
+
+callgraph(<?php echo $data; ?>,<?php echo $label; ?>)
 </script>
 </body>
 
