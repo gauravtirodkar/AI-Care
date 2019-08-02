@@ -59,11 +59,11 @@
               </li>
               <li>
                 <a href="blood-pressure.html">
-                  <i class="material-icons">list</i>Blood Pressure</a>
+                  <i class="material-icons">list</i> Blood Pressure</a>
               </li>
               <li>
                 <a href="posts.html">
-                    <i class="fa fa-2x fa-thermometer-three-quarters"></i>Temperature</a>
+                    <i class="fa fa-2x fa-thermometer-three-quarters"></i> Temperature</a>
               </li>
               <li>
                 <a href="categories.html">
@@ -94,6 +94,7 @@
             </ul>
           </div>
         </div>
+
       </nav>
 
 
@@ -141,26 +142,35 @@
             </div>
           </div>
         </div>
-      </div>
+     
+        </div>
       <?php
     if(file_exists('DiseasePrediction/disease.txt')){
       $file = file_get_contents('DiseasePrediction/disease.txt');
 
     
       ?>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-          <h1 class="display-4">Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h1>
-        <p class="lead"></p>
-        <hr class="my-4">
-        <p>Symptom Graph to be added here.</p>
-        <p class="lead">
+    <div class="card  mx-auto">
+      <div class=card-header><h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3></div>
+          
+        
+        <div class=card-body>
+        <p><h4>Symptoms</h4></p>
+        
+        <?php
+          include('DiseasePrediction/graph.php');
+          ?>
+        </div>
+        
+        <!-- <p class="lead">
+          
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>      </div>
-    </div>
+        </p>     -->  </div> 
+    
     <?php
     }
     ?>
+     
     </section>
     
     
@@ -184,7 +194,7 @@ crossorigin="anonymous"></script>
 
 <script>
 // Custom JS & jQuery here
-
+window.onload = function () {
 // HIDE SECTIONS
 $('section').hide();
 $('footer').hide();
@@ -285,6 +295,9 @@ CKEDITOR.replace('body');
 
 var ctx = document.getElementById('chartContainer').getContext('2d');
 new Chart(ctx, config);
+}
+
+callgraph(<?php echo $data; ?>,<?php echo $label; ?>)
 </script>
 </body>
 

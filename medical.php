@@ -23,15 +23,21 @@
 <body>
   <?php
   session_start();
-
+  #$_SESSION['abcd']=1;
+  if(array_key_exists('abcd',$_SESSION))
    if($_SESSION['abcd']==1){
   ?>
-  <div class="alert alert-info alert-dismissible fade show" role="alert">
-   <strong>BE CALM!</strong> You symptoms have been forwarded to your doctor.
+  <div class="container-fluid fixed-top ">
+    <div class=row>
+    <div class=" ml-auto col-auto alert alert-warning alert-dismissible fade show" role="alert">
+   <strong><b>KEEP CALM!</b></strong> <br> You symptoms have been forwarded to your doctor.
    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
    <span aria-hidden="true">&times;</span>
    </button>
    </div>
+    </div>
+  </div>
+ 
    <?php
   $_SESSION['abcd']=0; 
   }
