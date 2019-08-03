@@ -144,32 +144,86 @@
         </div>
      
         </div>
-      <?php
-    if(file_exists('DiseasePrediction/disease.txt')){
-      $file = file_get_contents('DiseasePrediction/disease.txt');
 
-    
-      ?>
+        <?php
+          if(file_exists('DiseasePrediction/disease.txt')){
+          $file = file_get_contents('DiseasePrediction/disease.txt');
+          ?>
+      
     <div class="card  mx-auto">
       <div class=card-header><h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3></div>
           
         
         <div class=card-body>
-        <p><h4>Symptoms</h4></p>
+        <div class=row>
+          <div class="col-lg-6 ">
+         
+          <p><h4>Symptoms</h4></p>
         
         <?php
           include('DiseasePrediction/graph.php');
           ?>
         </div>
-        
-        <!-- <p class="lead">
+
+        <div class="col-lg-6 ">
+        <?php 
+        $conf=(float) file_get_contents('DiseasePrediction/conf.txt');
+        $color='';
+
+        if($conf<30){
+          $color='bg-danger';
+        }
+        else if($conf<50){
+          $color='bg-warning';
+        }
+        else if($conf<60){
+          $color='bg-info';
+        }
+        else{
+          $color='bg-success';
+        }
+        ?>
+        <p><h4>Confidence Rate</h4></p>
+        <div class="progress" style="height:22px">
+          <div class="progress-bar progress-bar-animated  progress-bar-striped <?php echo $color; ?> " style="width:<?php echo $conf; ?>%">
+           <p class="h5 "><?php echo $conf; ?>%</p> 
+          </div>
+        </div>
+        <br>
+        <div class='card'>
+
+          <?php 
+          if(!array_key_exists('result',$_POST))
+            $_POST['result']=0;
+
+          if($_POST['result']==0){?>
+          <br> <br>
+          <h3 class=display-4> No recommended treatment available.</h3> <br> <br>
+          <?php } else{ ?>
+          <div class='card-header'>
+          <p><h4>Recommended Treatments</h4></p>
+
+          </div>
+          <div class='card-body'>
+            <?php include('DiseaseTrement/results.php'); ?>
+          </div>
+
+          <?php } ?>
+        </div>
           
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>     -->  </div> 
-    
-    <?php
-    }
-    ?>
+        
+       </div>
+        
+      
+      </div> 
+        
+       
+
+          </div>
+        </div>
+        <?php
+        }
+        ?>  
      
     </section>
     
