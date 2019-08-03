@@ -54,17 +54,14 @@
               <li class="active">
                 <a href="index.html">Dashboard</a>
               </li>
-              <!-- <li>
-                <a href="posts.html">Posts</a>
-              </li> -->
               <li>
-                <a href="categories.html">Emergency Services</a>
+                <a href="#">Emergency Services</a>
               </li>
               <li>
-                <a href="comments.html">Doctor's Word</a>
+                <a href="#">Doctor's Word</a>
               </li>
               <li>
-                <a href="users.html">Medicines</a>
+                <a href="#">Medicines</a>
               </li>
             </ul>
             <!-- Side nav -->
@@ -141,7 +138,7 @@
          </div>
          <div class="alert alert-danger alert-dismissible">
            <button type="button" class="close" data-dismiss="alert">&times;</button>
-           <strong>Danger!</strong> You are not regular with your morning blood-pressure dose.
+           <strong>Warning!</strong> You are not regular with your morning blood-pressure dose.
          </div>
          <div class="alert alert-primary alert-dismissible">
            <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -155,7 +152,7 @@
             <div class="card-panel blue lighten-1 white-text center">
               <i class="material-icons medium">insert_emoticon</i>
               <h5>Blood Pressure(in bpm)</h5>
-              <h3 >132/85</h3>
+              <h3 >162/65</h3>
               <div class="progress grey lighten-1">
                 <div class="determinate white" style="width: 40%;"></div>
               </div>
