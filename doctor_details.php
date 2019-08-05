@@ -1,172 +1,183 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--Import materialize.css-->
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-<link type="text/css" rel="stylesheet" href="css/styles.css" />
-<!--Let browser know website is optimized for mobile-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>वृद्ध सेवा</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>वृद्ध सेवा</title>
 </head>
+
 <body>
-    <!-- NAVIGATION -->
-  <nav class="red darken-2">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Hello, Dr.Rajesh</a>
-            <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li class="active">
-                <a href="index.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="posts.html">Posts</a>
-              </li>
-              <li>
-                <a href="categories.html">Categories</a>
-              </li>
-              <li>
-                <a href="comments.html">Comments</a>
-              </li>
-              <li>
-                <a href="users.html">Users</a>
-              </li>
-            </ul>
-            <!-- Side nav -->
-            <ul id="side-nav" class="side-nav">
-              <li>
-                <div class="user-view">
-                  <div class="background">
-                    <img src="./images/ocean.jpg" alt="">
-                  </div>
-                  <a href="#">
-                    <img src="./images/old_person.jpeg" alt="" class="circle">
-                  </a>
-                  <a href="#">
-                    <span class="name white-text">John Doe</span>
-                  </a>
-                  <a href="#">
-                    <span class="email white-text">jdoe@gmail.com</span>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <a href="blood-pressure.html">
-                  <i class="material-icons">list</i> Blood Pressure</a>
-              </li>
-              <li>
-                <a href="posts.html">
-                    <i class="fa fa-2x fa-thermometer-three-quarters"></i> Temperature</a>
-              </li>
-              <li>
-                <a href="categories.html">
-                        <i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
-              </li>
-              <li>
-                <a href="commments.html">
-                  <img src="./images/accident.png" class="mr-4"> Fall Detection</a>
-              </li>
-              <li>
-                <a href="users.html">
-                  <i class="material-icons">people</i> Sleep Pattern</a>
-              </li>
-              <li>
-                <div class="divider"></div>
-              </li>
-              <li>
-                <a class="subheader">Account Controls</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="material-icons">settings</i> Settings</a>
-              </li>
-              <li>
-                <a href="login.html" class="waves-effect">
-                  <i class="material-icons">power_settings_new</i> Logout</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+	<!-- NAVIGATION -->
+	<nav class="red darken-2">
+		<div class="container">
+			<div class="nav-wrapper">
+				<a href="index.html" class="brand-logo">Hello, Dr.Rajesh</a>
+				<a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li class="active">
+						<a href="index.html">Dashboard</a>
+					</li>
+					<li>
+						<a href="posts.html">Posts</a>
+					</li>
+					<li>
+						<a href="categories.html">Categories</a>
+					</li>
+					<li>
+						<a href="comments.html">Comments</a>
+					</li>
+					<li>
+						<a href="users.html">Users</a>
+					</li>
+				</ul>
+				<!-- Side nav -->
+				<ul id="side-nav" class="side-nav">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="./images/ocean.jpg" alt="">
+							</div>
+							<a href="#">
+								<img src="./images/old_person.jpeg" alt="" class="circle">
+							</a>
+							<a href="#">
+								<span class="name white-text">John Doe</span>
+							</a>
+							<a href="#">
+								<span class="email white-text">jdoe@gmail.com</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						<a href="blood-pressure.html">
+							<i class="material-icons">list</i> Blood Pressure</a>
+					</li>
+					<li>
+						<a href="posts.html">
+							<i class="fa fa-2x fa-thermometer-three-quarters"></i> Temperature</a>
+					</li>
+					<li>
+						<a href="categories.html">
+							<i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
+					</li>
+					<li>
+						<a href="commments.html">
+							<img src="./images/accident.png" class="mr-4"> Fall Detection</a>
+					</li>
+					<li>
+						<a href="users.html">
+							<i class="material-icons">people</i> Sleep Pattern</a>
+					</li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li>
+						<a class="subheader">Account Controls</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">settings</i> Settings</a>
+					</li>
+					<li>
+						<a href="login.html" class="waves-effect">
+							<i class="material-icons">power_settings_new</i> Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-      </nav>
+	</nav>
 
 
-      <!-- SECTION: STATS -->
-  <section class="section section-stats center">
-      <div class="row">
-        <div class="col s12 m6 l3">
-          <div class="card-panel blue lighten-1 white-text center">
-            <i class="material-icons medium">insert_emoticon</i>
-            <h5>Blood Pressure(in bpm)</h5>
-            <h3 >132/85</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate white" style="width: 40%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l3">
-          <div class="card-panel center">
-              <i class="fa fa-4x fa-thermometer-three-quarters"></i>
-            <h5>Body Temperature(in F)</h5>
-            <h3 class="count">99</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate blue lighten-1" style="width: 20%;"></div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col s12 m6 l3">
-          <div class="card-panel blue lighten-1 white-text center">
-              <i class="fa fa-4x fa-heartbeat"></i>
-            <h5>Pulse Rate</h5>
-            <h3 class="count">75</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate white" style="width: 58%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l3">
-          <div class="card-panel center">
-              <i class="fa fa-4x fa-bed"></i>
-            <h5>Average Sleep(in hrs)</h5>
-            <h3 class="count">7</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate blue lighten-1" style="width: 12%;"></div>
-            </div>
-          </div>
-        </div>
-     
-        </div>
+	<!-- SECTION: STATS -->
+	<section class="section section-stats center">
+		<div class="row">
+			<div class="col s12 m6 l3">
+				<div class="card-panel blue lighten-1 white-text center">
+					<i class="material-icons medium">insert_emoticon</i>
+					<h5>Blood Pressure(in bpm)</h5>
+					<h3>132/85</h3>
+					<div class="progress grey lighten-1">
+						<div class="determinate white" style="width: 40%;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card-panel center">
+					<i class="fa fa-4x fa-thermometer-three-quarters"></i>
+					<h5>Body Temperature(in F)</h5>
+					<h3 class="count">99</h3>
+					<div class="progress grey lighten-1">
+						<div class="determinate blue lighten-1" style="width: 20%;"></div>
+					</div>
+				</div>
+			</div>
 
-        <?php
+			<div class="col s12 m6 l3">
+				<div class="card-panel blue lighten-1 white-text center">
+					<i class="fa fa-4x fa-heartbeat"></i>
+					<h5>Pulse Rate</h5>
+					<h3 class="count">75</h3>
+					<div class="progress grey lighten-1">
+						<div class="determinate white" style="width: 58%;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card-panel center">
+					<i class="fa fa-4x fa-bed"></i>
+					<h5>Average Sleep(in hrs)</h5>
+					<h3 class="count">7</h3>
+					<div class="progress grey lighten-1">
+						<div class="determinate blue lighten-1" style="width: 12%;"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<?php
           if(file_exists('DiseasePrediction/disease.txt')){
           $file = file_get_contents('DiseasePrediction/disease.txt');
           ?>
-      
-    <div class="card  mx-auto">
-      <div class=card-header><h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3></div>
-          
-        
-        <div class=card-body>
-        <div class=row>
-          <div class="col-lg-6 ">
-         
-          <p><h4>Symptoms</h4></p>
-        
-        <?php
+
+		<div class="card  mx-auto">
+			<div class=card-header>
+				<h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3>
+			</div>
+
+
+			<div class=card-body>
+				<div class=row>
+					<div class="col-lg-6 ">
+
+						<p>
+							<h4>Symptoms</h4>
+						</p>
+
+						<?php
           include('DiseasePrediction/graph.php');
           ?>
-        </div>
+					</div>
 
-        <div class="col-lg-6 ">
-        <?php 
+					<div class="col-lg-6 ">
+						<?php 
         $conf=(float) file_get_contents('DiseasePrediction/conf.txt');
         $color='';
 
@@ -183,129 +194,140 @@
           $color='bg-success';
         }
         ?>
-        <p><h4>Confidence Rate</h4></p>
-        <div class="progress" style="height:22px">
-          <div class="progress-bar progress-bar-animated  progress-bar-striped <?php echo $color; ?> " style="width:<?php echo $conf; ?>%">
-           <p class="h5 "><?php echo $conf; ?>%</p> 
-          </div>
-        </div>
-        <br>
-        <div class='card'>
+						<p>
+							<h4>Confidence Rate</h4>
+						</p>
+						<div class="progress" style="height:22px">
+							<div class="progress-bar progress-bar-animated  progress-bar-striped <?php echo $color; ?> "
+								style="width:<?php echo $conf; ?>%">
+								<p class="h5 "><?php echo $conf; ?>%</p>
+							</div>
+						</div>
+						<br>
+						<div class='card'>
 
-          <?php 
-          if(!array_key_exists('result',$_POST))
-            $_POST['result']=0;
-
-          if($_POST['result']==0){?>
-          <br> <br>
-          <h3 class=display-4> No recommended treatment available.</h3> <br> <br>
-          <?php } else{ ?>
-          <div class='card-header'>
-          <p><h4>Recommended Treatments</h4></p>
-
-          </div>
-          <div class='card-body'>
-            <?php include('DiseaseTrement/results.php'); ?>
-          </div>
-
-          <?php } ?>
-        </div>
+							<?php 
           
-        
-       </div>
-        
-      
-      </div> 
-        
-       
+          #$_SEsSION['result']=1;
+          if(!array_key_exists("result",$_SESSION) || $_SESSION['result']==0){
+            /* $_POST['result']=1;
 
-          </div>
-        </div>
-        <?php
+          if($_POST['result']==0){ */?>
+							<br> <br>
+							<h3 class=display-4> No recommended treatment available.</h3> <br> <br>
+							<?php } else{ ?>
+							<div class='card-header'>
+								<p>
+									<h4>Recommended Treatments</h4>
+								</p>
+
+							</div>
+							<div class='card-body'>
+								<?php include('DiseasePrediction/results.php'); ?>
+							</div>
+
+							<?php } ?>
+						</div>
+
+
+					</div>
+
+
+				</div>
+
+
+
+			</div>
+		</div>
+		<?php
         }
-        ?>  
-     
-    </section>
-    
-    
-      <!-- FOOTER -->
-      <footer class="section red darken-2 white-text center">
-        <p>Vriddha Seva Panel Copyright &copy; 2019</p>
-      </footer>
- 
-    
-     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
-<script src="js/charts.js"></script>
-<script src="js/chart.js"></script>
+        ?>
 
-<script>
-// Custom JS & jQuery here
-window.onload = function () {
-// HIDE SECTIONS
-$('section').hide();
-$('footer').hide();
-$('.fixed-action-btn').hide();
-// hiding all the sections initially so we can show the preloader
+	</section>
 
-setTimeout(function () {
-$(document).ready(function () {
-// SHOW SECTIONS
-$('section').fadeIn();
-$('footer').fadeIn();
-$('.fixed-action-btn').fadeIn();
-// HIDE PRELOADER
-$('.loader').fadeOut();
 
-// SIDENAV INIT
-$('.button-collapse').sideNav();
+	<!-- FOOTER -->
+	<footer class="section red darken-2 white-text center">
+		<p>Vriddha Seva Panel Copyright &copy; 2019</p>
+	</footer>
 
-// MODAL INIT
-$('.modal').modal();
 
-// SELECT INIT
-$('select').material_select();
 
-// COUNTER
-$('.count').each(function () {
-$(this).prop('Counter', 0).animate({
-Counter: $(this).text()
-// $(this).text() takes the number, so whatever in this text is
-}, {
-duration: 1000,
-// in 1s goes from 0 to the number
-easing: 'swing',
-step: function (now) {
-    $(this).text(Math.ceil(now));
-}
-});
-});
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+	<script src="js/charts.js"></script>
+	
 
-// COMMENTS - APPROVE & DENY
-$('.approve').click(function (e) {
-Materialize.toast('Comment Approved', 3000);
-e.preventDefault();
-// it's a link so we want to stop the default behaviour
-});
-$('.deny').click(function (e) {
-Materialize.toast('Comment Denied', 3000);
-e.preventDefault();
-// it's a link so we want to stop the default behaviour
-});
-});
+	<script>
+		// Custom JS & jQuery here
+		window.onload = function () {
+			// HIDE SECTIONS
+			$('section').hide();
+			$('footer').hide();
+			$('.fixed-action-btn').hide();
+			// hiding all the sections initially so we can show the preloader
 
-// QUICK TODOS
-$('#todo-form').submit(function (e) {
-// console.log($('#todo').val());
+			setTimeout(function () {
+				$(document).ready(function () {
+					// SHOW SECTIONS
+					$('section').fadeIn();
+					$('footer').fadeIn();
+					$('.fixed-action-btn').fadeIn();
+					// HIDE PRELOADER
+					$('.loader').fadeOut();
 
-const output = `
+					// SIDENAV INIT
+					$('.button-collapse').sideNav();
+
+					// MODAL INIT
+					$('.modal').modal();
+
+					// SELECT INIT
+					$('select').material_select();
+
+					// COUNTER
+					$('.count').each(function () {
+						$(this).prop('Counter', 0).animate({
+							Counter: $(this).text()
+							// $(this).text() takes the number, so whatever in this text is
+						}, {
+							duration: 1000,
+							// in 1s goes from 0 to the number
+							easing: 'swing',
+							step: function (now) {
+								$(this).text(Math.ceil(now));
+							}
+						});
+					});
+
+					// COMMENTS - APPROVE & DENY
+					$('.approve').click(function (e) {
+						Materialize.toast('Comment Approved', 3000);
+						e.preventDefault();
+						// it's a link so we want to stop the default behaviour
+					});
+					$('.deny').click(function (e) {
+						Materialize.toast('Comment Denied', 3000);
+						e.preventDefault();
+						// it's a link so we want to stop the default behaviour
+					});
+				});
+
+				// QUICK TODOS
+				$('#todo-form').submit(function (e) {
+					// console.log($('#todo').val());
+
+					const output = `
 <li class="collection-item">
 <div>${$('#todo').val()}
 <a href="#" class="secondary-content delete">
@@ -314,45 +336,45 @@ const output = `
 </div>
 </li>
 `;
-// in the output variable we're storing what the user has entered in the input filed
+					// in the output variable we're storing what the user has entered in the input filed
 
-$('.todos').append(output);
-// appending to our todo list so it shows in the UI
+					$('.todos').append(output);
+					// appending to our todo list so it shows in the UI
 
-$('#todo').val('');
-// clear input field
+					$('#todo').val('');
+					// clear input field
 
-Materialize.toast('Todo Added', 3000);
-// show a notification that the todo has been added
+					Materialize.toast('Todo Added', 3000);
+					// show a notification that the todo has been added
 
-e.preventDefault();
-// we want to prevent the form from actually submiting
-});
+					e.preventDefault();
+					// we want to prevent the form from actually submiting
+				});
 
-// DELETE TODOS
-$('.todos').on('click', '.delete', function (e) {
-// $(this).parent().parent().remove();
-$(this).parent().parent().animate().fadeOut();
-// event delegation
+				// DELETE TODOS
+				$('.todos').on('click', '.delete', function (e) {
+					// $(this).parent().parent().remove();
+					$(this).parent().parent().animate().fadeOut();
+					// event delegation
 
-Materialize.toast('Todo Removed', 3000);
-// show a notification that the todo has been deleted
+					Materialize.toast('Todo Removed', 3000);
+					// show a notification that the todo has been deleted
 
-e.preventDefault();
-});
+					e.preventDefault();
+				});
 
-// FOR THE CKEDITOR
-CKEDITOR.replace('body');
+				// FOR THE CKEDITOR
+				CKEDITOR.replace('body');
 
-}, 1000);
-// PRELOADER
+			}, 1000);
+			// PRELOADER
 
-var ctx = document.getElementById('chartContainer').getContext('2d');
-new Chart(ctx, config);
-}
+			var ctx = document.getElementById('chartContainer').getContext('2d');
+			new Chart(ctx, config);
+		}
 
-callgraph(<?php echo $data; ?>,<?php echo $label; ?>)
-</script>
+		callgraph( <?php echo $data; ?> , <?php echo $label; ?> )
+	</script>
 </body>
 
 </html>
