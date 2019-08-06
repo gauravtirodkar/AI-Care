@@ -55,7 +55,7 @@
                 <a href="index.html">Dashboard</a>
               </li>
               <li>
-                <a href="#">Emergency Services</a>
+                <a href="sos.html">Emergency Services</a>
               </li>
               <li>
                 <a href="#">Doctor's Word</a>
@@ -257,7 +257,7 @@
       </div>
         
     
-      <!-- ADD USER MODAL -->
+      <!-- ADD USER MODAL
       <div id="user-modal" class="modal">
         <div class="modal-content">
           <h4>Add User</h4>
@@ -285,9 +285,70 @@
             <a href="#" class="modal-action modal-close btn blue white-text">Submit</a>
           </div>
         </div>
-      </div>
+      </div> -->
     
-    
+       <!-- SECTION: RECENT POSTS & TODOS -->
+       <section class="section section-recent">
+        <!-- <div class="row">
+          <div class="col s12 m6 l8">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Recent Posts</span>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   
+                   
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Medicines</span>
+                <form id="todo-form">
+                  <div class="input-field">
+                    <input type="text" id="todo" placeholder="Add Todo">
+                  </div>
+                </form>
+                <ul class="collection todos">
+                  <li class="collection-item">
+                    <div>Medicine One
+                      <a href="#" class="secondary-content delete">
+                        <i class="material-icons">close</i>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div>Medicine Two
+                      <a href="#" class="secondary-content delete">
+                        <i class="material-icons">close</i>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div>Medicine Three
+                      <a href="#" class="secondary-content delete">
+                        <i class="material-icons">close</i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
     
       <!-- PRELOADER -->
       <div class="loader preloader-wrapper big active">
@@ -407,7 +468,7 @@ setTimeout(function () {
     $(this).parent().parent().animate().fadeOut();
     // event delegation
 
-    Materialize.toast('Todo Removed', 3000);
+    Materialize.toast('Medicine Taken', 3000);
     // show a notification that the todo has been deleted
 
     e.preventDefault();
