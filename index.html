@@ -18,7 +18,7 @@
 <!-- Landing Page-->
 <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" >
     <div class="container">
-      <a class="navbar-brand" href="#" style="font-size: 25px;"><img src="./images/logo.png" style ="height: 10%; color: transparent;" alt=""> </a>
+      <a class="navbar-brand" href="index.html" style="font-size: 25px;"><img src="./images/logo.png" style ="height: 10%; color: transparent;" alt=""> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,9 +35,9 @@
                 Patients
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="./medical.php">Emergency Services</a>
+                <a class="dropdown-item" href="sos.html">Emergency Services</a>
                 <a class="dropdown-item" href="./medical.php">Medical History</a>
-                <a class="dropdown-item" href="./medical.php">View Reminders</a>
+                <a class="dropdown-item" href="./patientreminders.php">View Reminders</a>
               </div>
             </div>
           </li>
@@ -47,9 +47,9 @@
                 Doctors
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="doctors.html">Emergency</a>
-                <a class="dropdown-item" href="doctors.html">Medical Reports</a>
-                <a class="dropdown-item" href="doctors.html">Send Reminders</a>
+                <a class="dropdown-item" href="sos.html">Emergency</a>
+                <a class="dropdown-item" href="doctors.php">Medical Reports</a>
+                <a class="dropdown-item" href="patientreminders.php">Send Reminders</a>
               </div>
             </div>
           </li>
@@ -162,7 +162,7 @@
   <div class="container">
 <div style="text-align: center; padding:10px;">
 <img src="./images/services.jpg" style="width:5%;height:10%;" class="image-center" >
-<h1>Services</h1>
+<h1>Other Services</h1>
 </div>
 <div class="row">
 <div class="flip-card col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -218,8 +218,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-          <h3 class="s_heading">Some heading</h3>
-          <p class="s_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique impedit labore, inventore nesciunt eum repudiandae asperiores iusto ex. Natus blanditiis est sit quod deserunt provident asperiores expedita inventore ea.</p>
+          <h3 class="s_heading">Need of the hour</h3>
+          <p class="s_text">Improvement in medical science has increased the longetivity of life and india is no exception!. Elderly people are not that active and hence it gets difficult to keep a record of their previous illnesses. Thus the doctors sometimes fail to determine the true picture of the patients's illness.</p>
         </div>
         <div class="col-md-6">
               <!--Video-->
@@ -281,6 +281,8 @@
           </div>
                     </div>
                </div>
+              
+              
       </div>
 </div>
 
@@ -309,7 +311,7 @@
                   <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="height: 150px;"></textarea>
               </div>
           </div>
-          <div class="form-group">
+          <div  style="text-align: center;"class="form-group">
               <input type="submit" name="btnSubmit" class="btn btn-danger" style="margin-left:5px;" value=  "Send Message " />
           </div>
       </div>

@@ -14,6 +14,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
 
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -55,13 +56,10 @@
                 <a href="index.html">Dashboard</a>
               </li>
               <li>
-                <a href="#">Emergency Services</a>
+                <a href="sos.html">Emergency Services</a>
               </li>
               <li>
-                <a href="#">Doctor's Word</a>
-              </li>
-              <li>
-                <a href="#">Medicines</a>
+                <a href="#medic">Medicines</a>
               </li>
             </ul>
             <!-- Side nav -->
@@ -222,42 +220,55 @@
         </div>
       </section>
     
-  
-     
+  <!-- SECTION: RECENT POSTS & TODOS -->
+  <section id="medic" class="section section-recent">
+      
+      
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Medicines</span>
+            <form id="todo-form">
+              
+            </form>
+            <ul class="collection todos">
+              <li class="collection-item">
+                <div>Medicine One
+                  <a href="#" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>Medicine Two
+                  <a href="#" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div>Medicine Three
+                  <a href="#" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="map"></div>
 
       <!-- FOOTER -->
       <footer class="section blue darken-2 white-text center">
         <p>Vriddha Seva Panel Copyright &copy; 2019</p>
       </footer>
     
-    
-    
-      <!-- FIXED ACTION BUTTON -->
-      <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red">
-          <i class="material-icons">add</i>
-        </a>
-        <ul>
-          <li>
-            <a href="#post-modal" class="modal-trigger btn-floating blue">
-              <i class="material-icons">mode_edit</i>
-            </a>
-          </li>
-          <li>
-            <a href="#category-modal" class="modal-trigger btn-floating blue">
-              <i class="material-icons">folder</i>
-            </a>
-          </li>
-          <li>
-            <a href="#user-modal" class="modal-trigger btn-floating blue">
-              <i class="material-icons">supervisor_account</i>
-            </a>
-          </li>
-        </ul>
-      </div>
         
     
-      <!-- ADD USER MODAL -->
+      <!-- ADD USER MODAL
       <div id="user-modal" class="modal">
         <div class="modal-content">
           <h4>Add User</h4>
@@ -285,9 +296,11 @@
             <a href="#" class="modal-action modal-close btn blue white-text">Submit</a>
           </div>
         </div>
-      </div>
+      </div> -->
     
-    
+       
+
+      <section>
     
       <!-- PRELOADER -->
       <div class="loader preloader-wrapper big active">
@@ -407,7 +420,7 @@ setTimeout(function () {
     $(this).parent().parent().animate().fadeOut();
     // event delegation
 
-    Materialize.toast('Todo Removed', 3000);
+    Materialize.toast('Medicine Taken', 3000);
     // show a notification that the todo has been deleted
 
     e.preventDefault();
@@ -475,6 +488,88 @@ var config = {
 	var ctx = document.getElementById('chartContainer').getContext('2d');
 	 new Chart(ctx, config);
 </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwNRGEmkPdOmFhrGXZdKcZZb4YnwxAUdI&libraries=places&callback=initMap" async defer></script>
+    <script>
+        var map;
+
+function initMap() {
+    // Create the map.
+    var pyrmont = {
+        lat: 28.644800,
+
+        lng: 77.216721
+    };
+    if (navigator.geolocation) {
+        try {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pyrmont = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+            });
+        } catch (err) {
+
+        }
+    }
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: pyrmont,
+        zoom: 17
+    });
+
+    // Create the places service.
+    var service = new google.maps.places.PlacesService(map);
+
+    // Perform a nearby search.
+    service.nearbySearch({
+            location: pyrmont,
+            radius: 4000,
+            type: ['hospital']
+        },
+        function(results, status, pagination) {
+            if (status !== 'OK') return;
+
+            createMarkers(results);
+            getNextPage = pagination.hasNextPage && function() {
+                pagination.nextPage();
+            };
+        });
+}
+
+function createMarkers(places) {
+    var bounds = new google.maps.LatLngBounds();
+    for (var i = 0, place; place = places[i]; i++) {
+        var image = {
+            url: place.icon,
+            size: new google.maps.Size(71, 71),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(17, 34),
+            scaledSize: new google.maps.Size(25, 25)
+        };
+
+        var marker = new google.maps.Marker({
+            map: map,
+            icon: image,
+            title: place.name,
+            position: place.geometry.location
+        });
+        bounds.extend(place.geometry.location);
+    }
+    map.fitBounds(bounds);
+}
+    </script>
+    <style>
+        html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 500px;
+
+  width: 100%;
+}
+
 </body>
 
 </html>
