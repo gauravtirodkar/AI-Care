@@ -85,57 +85,58 @@
                       <tr>
                         <th></th>
                         <th>Name</th>
-                        <th>Email</th>
-                        <th>Registered</th>
+                        <th>Details</th>
+                        <!-- <th>Email</th>
+                        <th>Registered</th> -->
                         <th></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td width="70">
-                          <img src="./images/person1.jpg
-                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;">
+                          <img src="./images/p1.jpg
+                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;height:20;">
                         </td>
                         <td>Vishandas Mehta</td>
-                        <td>vishandas_mehta58@gmail.com</td>
-                        <td>Jan 17th, 2019</td>
+                        <!-- <td>vishandas_mehta58@gmail.com</td>
+                        <td>Jan 17th, 2019</td> -->
                         <td>
-                          <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
+                          <a href=" <?php echo $loc; ?>" class="btn btn-sm" style="background-color: rgb(25, 150, 56)">Details</a>
 
                         </td>
                       </tr>
                       <tr>
                         <td width="70">
-                          <img src="./images/person2.jpg
-                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;">
+                          <img src="./images/p2.jpg
+                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;height:20;">
                         </td>
                         <td>Smriti Barkha</td>
-                        <td>barkhasmriti@gmail.com</td>
-                        <td>Mar 3rd, 2019</td>
+                        <!-- <td>barkhasmriti@gmail.com</td>
+                        <td>Mar 3rd, 2019</td> -->
                         <td>
-                          <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
+                          <a href=" <?php echo $loc; ?>" class="btn btn-sm" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
                       </tr>
                       <tr>
                         <td width="70">
-                          <img src="./images/person3.jpg
-                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;">
+                          <img src="./images/p3.jpg
+                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;height:20;">
                         </td>
                         <td>Eknath Walke</td>
-                        <td>eknathwalke@gmail.com</td>
-                        <td>Dec 15th, 2018</td>
+                        <!-- <td>eknathwalke@gmail.com</td>
+                        <td>Dec 15th, 2018</td> -->
                         <td>
                           <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
                       </tr>
                       <tr>
                         <td width="70">
-                          <img src="./images/person4.jpg
-                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;">
+                          <img src="./images/p4.jpg
+                              " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px; height:20;">
                         </td>
                         <td>Durga Maheshwari</td>
-                        <td>dmaheshwari@hotmail.com</td>
-                        <td>Nov 10th, 2018</td>
+                        <!-- <td>dmaheshwari@hotmail.com</td>
+                        <td>Nov 10th, 2018</td> -->
                         <td>
                           <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
