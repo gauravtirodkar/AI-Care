@@ -21,177 +21,13 @@ session_start();
 </head>
 
 <body>
-<<<<<<< HEAD
-    <!-- NAVIGATION -->
-  <nav class="red darken-2">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Hello, Dr.Rajesh</a>
-            <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li class="active">
-                <a href="index.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="posts.html">Posts</a>
-              </li>
-              <li>
-                <a href="categories.html">Categories</a>
-              </li>
-              <li>
-                <a href="comments.html">Comments</a>
-              </li>
-              <li>
-                <a href="users.html">Users</a>
-              </li>
-            </ul>
-            <!-- Side nav -->
-            <ul id="side-nav" class="side-nav">
-              <li>
-                <div class="user-view">
-                  <div class="background">
-                    <img src="./images/ocean.jpg" alt="">
-                  </div>
-                  <a href="#">
-                    <img src="./images/old_person.jpeg" alt="" class="circle">
-                  </a>
-                  <a href="#">
-                    <span class="name white-text">John Doe</span>
-                  </a>
-                  <a href="#">
-                    <span class="email white-text">jdoe@gmail.com</span>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <a href="blood-pressure.html">
-                  <i class="material-icons">list</i> Blood Pressure</a>
-              </li>
-              <li>
-                <a href="posts.html">
-                    <i class="fa fa-2x fa-thermometer-three-quarters"></i> Temperature</a>
-              </li>
-              <li>
-                <a href="categories.html">
-                        <i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
-              </li>
-              <li>
-                <a href="commments.html">
-                  <img src="./images/accident.png" class="mr-4"> Fall Detection</a>
-              </li>
-              <li>
-                <a href="users.html">
-                  <i class="material-icons">people</i> Sleep Pattern</a>
-              </li>
-              <li>
-                <div class="divider"></div>
-              </li>
-              <li>
-                <a class="subheader">Account Controls</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="material-icons">settings</i> Settings</a>
-              </li>
-              <li>
-                <a href="login.html" class="waves-effect">
-                  <i class="material-icons">power_settings_new</i> Logout</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </nav>
-
-
-      <!-- SECTION: STATS -->
-  <section class="section section-stats center">
-      <div class="row">
-        <div class="col s12 m6 l3">
-          <div class="card-panel red lighten-1 white-text center">
-            <i class="material-icons medium">insert_emoticon</i>
-            <h5>Blood Pressure(in bpm)</h5>
-            <h3 >162/65</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate white" style="width: 40%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l3">
-          <div class="card-panel center">
-              <i class="fa fa-4x fa-thermometer-three-quarters"></i>
-            <h5>Body Temperature(in F)</h5>
-            <h3 class="count">99</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate blue lighten-1" style="width: 20%;"></div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col s12 m6 l3">
-          <div class="card-panel blue lighten-1 white-text center">
-              <i class="fa fa-4x fa-heartbeat"></i>
-            <h5>Pulse Rate</h5>
-            <h3 class="count">75</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate white" style="width: 58%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l3">
-          <div class="card-panel center">
-              <i class="fa fa-4x fa-bed"></i>
-            <h5>Average Sleep(in hrs)</h5>
-            <h3 class="count">7</h3>
-            <div class="progress grey lighten-1">
-              <div class="determinate blue lighten-1" style="width: 12%;"></div>
-            </div>
-          </div>
-        </div>
-     
-        </div>
-      <?php
-    if(file_exists('DiseasePrediction/disease.txt')){
-      $file = file_get_contents('DiseasePrediction/disease.txt');
-
-    
-      ?>
-    <div class="card  mx-auto">
-      <div class=card-header><h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3></div>
-          
-        
-        <div class=card-body>
-        <p><h4>Symptoms</h4></p>
-        
-        <?php
-=======
 	<!-- NAVIGATION -->
 	<nav class="red darken-2">
 		<div class="container">
 			<div class="nav-wrapper">
 				<a href="index.html" class="brand-logo">Hello, Dr.Rajesh</a>
 				<a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-					<i class="material-icons">menu</i>
-				</a>
-				<ul class="right hide-on-med-and-down">
-					<li class="active">
-						<a href="index.html">Dashboard</a>
-					</li>
-					<li>
-						<a href="posts.html">Posts</a>
-					</li>
-					<li>
-						<a href="categories.html">Categories</a>
-					</li>
-					<li>
-						<a href="comments.html">Comments</a>
-					</li>
-					<li>
-						<a href="users.html">Users</a>
-					</li>
-				</ul>
+				
 				<!-- Side nav -->
 				<ul id="side-nav" class="side-nav">
 					<li>
@@ -318,7 +154,6 @@ session_start();
 						</p>
 
 						<?php
->>>>>>> 3e60d56e5990af5760f2ba6b9c513ee6a50d7da7
           include('DiseasePrediction/graph.php');
           ?>
 					</div>

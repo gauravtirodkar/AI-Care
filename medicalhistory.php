@@ -1,4 +1,4 @@
- <?php
+<?php
   if(file_exists('DiseasePrediction/res.csv')){
     $loc='doctor_details.php';
   }
@@ -32,6 +32,23 @@
             <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
               <i class="material-icons">menu</i>
             </a>
+            <ul class="right hide-on-med-and-down">
+              <li class="active">
+                <a href="index.html">Dashboard</a>
+              </li>
+              <li>
+                <a href="#">Queries</a>
+              </li>
+              <li>
+                <a href="#">Recommendation</a>
+              </li>
+              <li>
+                <a href="#">Cummulative Report</a>
+              </li>
+              <li>
+                <a href="#">Patients</a>
+              </li>
+            </ul>
             <!-- Side nav -->
             <ul id="side-nav" class="side-nav">
               <li>
@@ -54,6 +71,23 @@
                 <a href=" <?php echo $loc; ?>">
                   <i class="material-icons">list</i>Patient History</a>
               </li>
+              <li>
+                <a href="posts.html">
+                    <i class="material-icons">list</i>Sensor History</a>
+              </li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li>
+                <a href="categories.html">
+                    <i class="fa fa-2x fa-sticky-note"></i> Send Prescription</a>
+              </li>
+              <li>
+                <a href="commments.html">
+                    <i class="fa fa-2x fa-exclamation-triangle"></i> Send Alerts</a>
+              </li>
+             
+              <li>
                 <a class="subheader">Account Controls</a>
               </li>
               <li>
@@ -79,7 +113,7 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-content">
-                  <span class="card-title">Patients</span>
+                  <span class="card-title">History</span>
                   <table class="striped">
                     <thead>
                       <tr>

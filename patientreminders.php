@@ -14,7 +14,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
 
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -55,13 +54,7 @@
               <li class="active">
                 <a href="index.html">Dashboard</a>
               </li>
-              <li>
-                <a href="sos.html">Emergency Services</a>
-              </li>
-              <li>
-                <a href="#medic">Medicines</a>
-              </li>
-            </ul>
+             
             <!-- Side nav -->
             <ul id="side-nav" class="side-nav">
               <li>
@@ -143,129 +136,56 @@
            <strong>New Task!</strong> Drink 3 litres of water and sleep for 8 hours.
          </div>
        </div>
-     <!-- SECTION: STATS -->
-  <section class="section section-stats center">
-        <div class="row">
-          <div class="col s12 m6 l3">
-            <div class="card-panel blue lighten-1 white-text center">
-              <i class="material-icons medium">insert_emoticon</i>
-              <h5>Blood Pressure(in bpm)</h5>
-              <h3 >162/65</h3>
-              <div class="progress grey lighten-1">
-                <div class="determinate white" style="width: 40%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l3">
-            <div class="card-panel center">
-                <i class="fa fa-4x fa-thermometer-three-quarters"></i>
-              <h5>Body Temperature(in F)</h5>
-              <h3 class="count">99</h3>
-              <div class="progress grey lighten-1">
-                <div class="determinate blue lighten-1" style="width: 20%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l3">
-            <div class="card-panel blue lighten-1 white-text center">
-                <i class="fa fa-4x fa-heartbeat"></i>
-              <h5>Pulse Rate</h5>
-              <h3 class="count">75</h3>
-              <div class="progress grey lighten-1">
-                <div class="determinate white" style="width: 58%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l3">
-            <div class="card-panel center">
-                <i class="fa fa-4x fa-bed"></i>
-              <h5>Average Sleep(in hrs)</h5>
-              <h3 class="count">7</h3>
-              <div class="progress grey lighten-1">
-                <div class="determinate blue lighten-1" style="width: 12%;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col s12 m6 l3">
-
-          </div>
-          <div class="col s12 m6 l3">
-            <div class="card-panel center">
-                <i class="fa fa-4x fa-thermometer-three-quarters"></i>
-              <h5>Body Temperature(in F)</h5>
-              <h3 class="count">99</h3>
-              <div class="progress grey lighten-1">
-                <div class="determinate blue lighten-1" style="width: 20%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l3">
-            <div class="card-panel blue lighten-1 white-text center">
-                <i class="fa fa-4x fa-paper-plane"></i>
-              <h5>Send Report</h5>
-              <br>
-              <button class='btn btn-danger' type='submit' name='Click' onClick="document.location.href='DiseasePrediction/symp1.php'">Click</button>
-              <br><br>
-              <div class="progress grey lighten-1">
-                <div class="determinate white" style="width: 58%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l3">
-
-          </div>
-        </div>
-      </section>
-    
+  
   <!-- SECTION: RECENT POSTS & TODOS -->
-  <section id="medic" class="section section-recent">
-      
-      
-      <div class="col s12 m6 l4">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Medicines</span>
-            <form id="todo-form">
-              
-            </form>
-            <ul class="collection todos">
-              <li class="collection-item">
-                <div>Medicine One
-                  <a href="#" class="secondary-content delete">
-                    <i class="material-icons">close</i>
-                  </a>
-                </div>
-              </li>
-              <li class="collection-item">
-                <div>Medicine Two
-                  <a href="#" class="secondary-content delete">
-                    <i class="material-icons">close</i>
-                  </a>
-                </div>
-              </li>
-              <li class="collection-item">
-                <div>Medicine Three
-                  <a href="#" class="secondary-content delete">
-                    <i class="material-icons">close</i>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div id="map"></div>
+  <section class="section section-recent">
+     
+     <div class="col s12 m6 l4">
+       <div class="card">
+         <div class="card-content">
+           <span class="card-title">Medicines to be taken</span>
+           <form id="todo-form">
+             <div class="input-field">
+               <input type="text" id="todo" placeholder="Add Todo">
+             </div>
+           </form>
+           <ul class="collection todos">
+             <li class="collection-item">
+               <div>Medicine One
+                 <a href="#" class="secondary-content delete">
+                   <i class="material-icons">close</i>
+                 </a>
+               </div>
+             </li>
+             <li class="collection-item">
+               <div>Medicine Two
+                 <a href="#" class="secondary-content delete">
+                   <i class="material-icons">close</i>
+                 </a>
+               </div>
+             </li>
+             <li class="collection-item">
+               <div>Medicine Three
+                 <a href="#" class="secondary-content delete">
+                   <i class="material-icons">close</i>
+                 </a>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <section>
 
       <!-- FOOTER -->
       <footer class="section blue darken-2 white-text center">
         <p>Vriddha Seva Panel Copyright &copy; 2019</p>
       </footer>
     
+
         
     
       <!-- ADD USER MODAL
@@ -298,9 +218,7 @@
         </div>
       </div> -->
     
-       
-
-      <section>
+     
     
       <!-- PRELOADER -->
       <div class="loader preloader-wrapper big active">
@@ -488,88 +406,6 @@ var config = {
 	var ctx = document.getElementById('chartContainer').getContext('2d');
 	 new Chart(ctx, config);
 </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwNRGEmkPdOmFhrGXZdKcZZb4YnwxAUdI&libraries=places&callback=initMap" async defer></script>
-    <script>
-        var map;
-
-function initMap() {
-    // Create the map.
-    var pyrmont = {
-        lat: 28.644800,
-
-        lng: 77.216721
-    };
-    if (navigator.geolocation) {
-        try {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var pyrmont = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
-            });
-        } catch (err) {
-
-        }
-    }
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: pyrmont,
-        zoom: 17
-    });
-
-    // Create the places service.
-    var service = new google.maps.places.PlacesService(map);
-
-    // Perform a nearby search.
-    service.nearbySearch({
-            location: pyrmont,
-            radius: 4000,
-            type: ['hospital']
-        },
-        function(results, status, pagination) {
-            if (status !== 'OK') return;
-
-            createMarkers(results);
-            getNextPage = pagination.hasNextPage && function() {
-                pagination.nextPage();
-            };
-        });
-}
-
-function createMarkers(places) {
-    var bounds = new google.maps.LatLngBounds();
-    for (var i = 0, place; place = places[i]; i++) {
-        var image = {
-            url: place.icon,
-            size: new google.maps.Size(71, 71),
-            origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(17, 34),
-            scaledSize: new google.maps.Size(25, 25)
-        };
-
-        var marker = new google.maps.Marker({
-            map: map,
-            icon: image,
-            title: place.name,
-            position: place.geometry.location
-        });
-        bounds.extend(place.geometry.location);
-    }
-    map.fitBounds(bounds);
-}
-    </script>
-    <style>
-        html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-#map {
-  height: 500px;
-
-  width: 100%;
-}
-
 </body>
 
 </html>
