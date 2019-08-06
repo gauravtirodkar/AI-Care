@@ -1,4 +1,13 @@
-  <!DOCTYPE html>
+ <?php
+  if(file_exists('DiseasePrediction/res.csv')){
+    $loc='doctor_details.php';
+  }
+  else{
+    $loc='DiseasePrediction/runpy2.php';
+  }
+ ?>
+ 
+ <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +68,7 @@
                 </div>
               </li>
               <li>
-                <a href="doctor_details.php">
+                <a href=" <?php echo $loc; ?>">
                   <i class="material-icons">list</i>Patient History</a>
               </li>
               <li>
@@ -125,7 +134,7 @@
                         <td>vishandas_mehta58@gmail.com</td>
                         <td>Jan 17th, 2019</td>
                         <td>
-                          <a href="doctor_details.php" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
+                          <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
 
                         </td>
                       </tr>
@@ -138,7 +147,7 @@
                         <td>barkhasmriti@gmail.com</td>
                         <td>Mar 3rd, 2019</td>
                         <td>
-                          <a href="doctor_details.php" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
+                          <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
                       </tr>
                       <tr>
@@ -150,7 +159,7 @@
                         <td>eknathwalke@gmail.com</td>
                         <td>Dec 15th, 2018</td>
                         <td>
-                          <a href="doctor_details.php" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
+                          <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
                       </tr>
                       <tr>
@@ -162,7 +171,7 @@
                         <td>dmaheshwari@hotmail.com</td>
                         <td>Nov 10th, 2018</td>
                         <td>
-                          <a href="doctor_details.php" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
+                          <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
                       </tr>
                     </tbody>
@@ -173,7 +182,7 @@
                     <li class="disabled">
                       <a href="#" class="blue-text">
                         <i class="material-icons">chevron_left</i>
-                      </a>
+                      </a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                     </li>
                     <li class="active blue lighten-2">
                       <a href="#" class="white-text number">1</a>
