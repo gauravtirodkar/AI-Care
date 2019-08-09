@@ -27,60 +27,60 @@ session_start();
 			<div class="nav-wrapper">
 				<a href="index.html" class="brand-logo">Hello, Dr.Rajesh</a>
 				<a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-				
-				<!-- Side nav -->
-				<ul id="side-nav" class="side-nav">
-					<li>
-						<div class="user-view">
-							<div class="background">
-								<img src="./images/ocean.jpg" alt="">
+
+					<!-- Side nav -->
+					<ul id="side-nav" class="side-nav">
+						<li>
+							<div class="user-view">
+								<div class="background">
+									<img src="./images/ocean.jpg" alt="">
+								</div>
+								<a href="#">
+									<img src="./images/old_person.jpeg" alt="" class="circle">
+								</a>
+								<a href="#">
+									<span class="name white-text">John Doe</span>
+								</a>
+								<a href="#">
+									<span class="email white-text">jdoe@gmail.com</span>
+								</a>
 							</div>
+						</li>
+						<li>
+							<a href="blood-pressure.html">
+								<i class="material-icons">list</i> Blood Pressure</a>
+						</li>
+						<li>
+							<a href="posts.html">
+								<i class="fa fa-2x fa-thermometer-three-quarters"></i> Temperature</a>
+						</li>
+						<li>
+							<a href="categories.html">
+								<i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
+						</li>
+						<li>
+							<a href="commments.html">
+								<img src="./images/accident.png" class="mr-4"> Fall Detection</a>
+						</li>
+						<li>
+							<a href="users.html">
+								<i class="material-icons">people</i> Sleep Pattern</a>
+						</li>
+						<li>
+							<div class="divider"></div>
+						</li>
+						<li>
+							<a class="subheader">Account Controls</a>
+						</li>
+						<li>
 							<a href="#">
-								<img src="./images/old_person.jpeg" alt="" class="circle">
-							</a>
-							<a href="#">
-								<span class="name white-text">John Doe</span>
-							</a>
-							<a href="#">
-								<span class="email white-text">jdoe@gmail.com</span>
-							</a>
-						</div>
-					</li>
-					<li>
-						<a href="blood-pressure.html">
-							<i class="material-icons">list</i> Blood Pressure</a>
-					</li>
-					<li>
-						<a href="posts.html">
-							<i class="fa fa-2x fa-thermometer-three-quarters"></i> Temperature</a>
-					</li>
-					<li>
-						<a href="categories.html">
-							<i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
-					</li>
-					<li>
-						<a href="commments.html">
-							<img src="./images/accident.png" class="mr-4"> Fall Detection</a>
-					</li>
-					<li>
-						<a href="users.html">
-							<i class="material-icons">people</i> Sleep Pattern</a>
-					</li>
-					<li>
-						<div class="divider"></div>
-					</li>
-					<li>
-						<a class="subheader">Account Controls</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="material-icons">settings</i> Settings</a>
-					</li>
-					<li>
-						<a href="login.html" class="waves-effect">
-							<i class="material-icons">power_settings_new</i> Logout</a>
-					</li>
-				</ul>
+								<i class="material-icons">settings</i> Settings</a>
+						</li>
+						<li>
+							<a href="login.html" class="waves-effect">
+								<i class="material-icons">power_settings_new</i> Logout</a>
+						</li>
+					</ul>
 			</div>
 		</div>
 
@@ -135,17 +135,17 @@ session_start();
 		</div>
 
 		<?php
-          if(file_exists('DiseasePrediction/disease.txt')){
+          if(file_exists('DiseasePrediction/disease.txt') && file_exists('DiseasePrediction/res.csv')){
           $file = file_get_contents('DiseasePrediction/disease.txt');
           ?>
 
-		<div class="card  mx-auto">
+		<div class="card">
 			<div class=card-header>
 				<h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3>
 			</div>
 
 
-			<div class=card-body>
+			<div class=card-body > 
 				<div class=row>
 					<div class="col-lg-6 ">
 
@@ -220,10 +220,64 @@ session_start();
 
 
 			</div>
+			<div class="row mx-auto">
+				<button class="btn btn-success btn-md">Approve</button> &nbsp;
+				<button class='btn btn-danger btn-md'>Decline</button>
+			</div>
 		</div>
+
+
 		<?php
         }
         ?>
+
+
+		<div class='card text-center col-lg-6 mx-auto '>
+
+
+			<div class='card-header'>
+				<p>
+					<h4>Previous Records</h4>
+				</p>
+
+			</div>
+			<div class='card-body table-responsive '>
+				<table class="table  table-bordered">
+					<thead class="thead-light">
+						<tr>
+							<th >#</th>
+							<th >Date</th>
+							<th >Symptoms</th>
+							<th >Ailment</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class=>
+							<th >1</th>
+							<td>5 Aug 2019</td>
+							<td>Fever, Chills, Cough</td>
+							<td>Viral Fever</td>
+						</tr>
+						<tr>
+							<th >2</th>
+							<td>19 July 2019</td>
+							<td>Sneezing, nasal congestion</td>
+							<td>Nasal Infection</td>
+						</tr>
+						<tr>
+							<th >3</th>
+							<td>23 June 2019</td>
+							<td>Chest Pain, Difficulty in breathing</td>
+							<td>Pulmonary Edema</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+		</div>
+
+		
 
 	</section>
 
@@ -248,7 +302,7 @@ session_start();
 	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
 	<script src="js/charts.js"></script>
-	
+
 
 	<script>
 		// Custom JS & jQuery here
@@ -355,7 +409,7 @@ session_start();
 			new Chart(ctx, config);
 		}
 
-		callgraph( <?php echo $data; ?> , <?php echo $label; ?> )
+		callgraph( < ? php echo $data; ? > , < ? php echo $label; ? > )
 	</script>
 </body>
 
