@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -12,32 +12,23 @@
     <!--Let browser know website is optimized for mobile-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>वृद्ध सेवा</title>
+    <title>VridhhaSeva</title>
 </head>
 <body>
 <!-- NAVIGATION -->
 <nav class="blue darken-2">
     <div class="container">
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Hello, John Doe</a>
+        <a class="navbar-brand" href="index.html" style="font-size: 25px;"><img src="./images/logo.png" style ="height: 70px; padding:8px; color: transparent;" alt=""> </a>
             <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
+             <li>
+                    <a href="index.html">Home</a>
+                </li>
                 <li class="active">
-                    <a href="index.html">Dashboard</a>
-                </li>
-                <li>
-                    <a href="posts.html">Posts</a>
-                </li>
-                <li>
-                    <a href="categories.html">Categories</a>
-                </li>
-                <li>
-                    <a href="comments.html">Comments</a>
-                </li>
-                <li>
-                    <a href="users.html">Users</a>
+                    <a href="medical.php">Dashboard</a>
                 </li>
             </ul>
             <!-- Side nav -->
@@ -51,10 +42,10 @@
                             <img src="./images/old_person.jpeg" alt="" class="circle">
                         </a>
                         <a href="#">
-                            <span class="name white-text">Mahesh Bhatia</span>
+                            <span class="name white-text">Vishandas Mehta</span>
                         </a>
                         <a href="#">
-                            <span class="email white-text">maheshbhatia19@gmail.com</span>
+                            <span class="email white-text">vishandas_mehta58@gmail.com</span>
                         </a>
                     </div>
                 </li>
@@ -71,7 +62,7 @@
                         <i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
                 </li>
                 <li>
-                    <a href="commments.html">
+                    <a href="medical.php">
                         <img src="./images/accident.png" class="mr-4"> Fall Detection</a>
                 </li>
                 <li>
@@ -96,7 +87,6 @@
         </div>
     </div>
 </nav>
-
 <!-- SECTION: VISITORS -->
 <!--MAIN TEMPERATURE PATTERN DETECTION SECTION-->
 <section class="section section-visitors blue lighten-4">
@@ -112,10 +102,10 @@
         <div class="col-md-3">
             <ul class="collection with-header latest-comments">
                 <li class="collection-header">
-                    <h5>Details</h5>
+                    <h5 style="text-align:center;color:black;">Vishandas Mehta</h5>
                 </li>
-                <li class="collection-item avatar">
-                    <img src="./images/person1.jpg" alt="John Doe" class="circle">
+                <li class="collection-item avatar">Vishandas Mehta
+                    <img src="./images/person1.jpg" alt="Vishandas Mehta" class="circle">
                     <span class="title">Average Body-Temperature </span>
                     <p id="avg-temperature"></p>
                     <!-- we use the truncate class when we want to show some of the words, not all words because comments can be pretty large -->
@@ -151,17 +141,17 @@
                     </select>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="./images/person1.jpg" alt="John Doe" class="circle">
+                    <img src="./images/doc.png" alt="Vishandas Mehta" class="circle">
                     <span class="title">Week 1</span>
                     <p class="temperature-grade blue-text">Good</p>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="./images/person1.jpg" alt="John Doe" class="circle">
+                    <img src="./images/doc.png" alt="Vishandas Mehta" class="circle">
                     <span class="title">Week 2</span>
                     <p class="temperature-grade">Average</p>
                 </li>
                 <li class="collection-item avatar">
-                    <img src="./images/person1.jpg" alt="John Doe" class="circle">
+                    <img src="./images/doc.png" alt="John Doe" class="circle">
                     <span class="title">Week 3</span>
                     <p class="temperature-grade blue-text">Good</p>
                 </li>
