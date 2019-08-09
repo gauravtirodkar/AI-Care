@@ -7,7 +7,7 @@
   }
  ?>
  
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,55 +20,81 @@
 <link type="text/css" rel="stylesheet" href="css/styles.css" />
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>वृद्ध सेवा</title>
+<title>VridhhaSeva</title>
 </head>
 <body>
     <!-- NAVIGATION -->
-    <div style="background-color:rgba(226, 110, 110, 1)">
-  <nav >
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo" style="font: 10">Dr. Rajesh</a>
+	<nav class="red lighten">
+    <div class="container">
+        <div class="nav-wrapper">
+        <a class="navbar-brand" href="index.html" style="font-size: 25px;"><img src="./images/logo.png" style ="height: 70px; padding:8px; color: transparent;" alt=""> </a>
             <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-              <i class="material-icons">menu</i>
+                <i class="material-icons">menu</i>
             </a>
+            <ul class="right hide-on-med-and-down">
+             <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="#">Dashboard</a>
+                </li>
+            </ul>
             <!-- Side nav -->
             <ul id="side-nav" class="side-nav">
-              <li>
-                <div class="user-view">
-                  <div class="background">
-                    <img src="./images/ocean.jpg" alt="">
-                  </div>
-                  <a href="#">
-                    <img src="./images/old_person.jpeg" alt="" class="circle">
-                  </a>
-                  <a href="#">
-                    <span class="name white-text">Rajesh Manoj</span>
-                  </a>
-                  <a href="#">
-                    <span class="email white-text">drmanoj79@gmail.com</span>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <a href=" <?php echo $loc; ?>">
-                  <i class="material-icons">list</i>Patient History</a>
-              </li>
-                <a class="subheader">Account Controls</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="material-icons">settings</i> Settings</a>
-              </li>
-              <li>
-                <a href="login.html" class="waves-effect">
-                  <i class="material-icons">power_settings_new</i> Logout</a>
-              </li>
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="./images/ocean.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <img src="./images/doc.png" alt="" class="circle">
+                        </a>
+                        <a href="#">
+                            <span class="name white-text">Dr Rajesh Bhatia</span>
+                        </a>
+                        <a href="#">
+                            <span class="email white-text">rajeshbhatia@gmail.com</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="blood-pressure.html">
+                        <i class="material-icons">list</i> Blood Pressure</a>
+                </li>
+                <li>
+                    <a href="temperature.html">
+                        <i class="fa fa-2x fa-thermometer-three-quarters"></i> Temperature</a>
+                </li>
+                <li>
+                    <a href="heart-rate.html">
+                        <i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
+                </li>
+                <li>
+                    <a href="medical.php">
+                        <img src="./images/accident.png" class="mr-4"> Fall Detection</a>
+                </li>
+                <li>
+                    <a href="sleep.html">
+                      <i class="material-icons">people</i> Sleep Pattern</a>
+                  </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="subheader">Account Controls</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">settings</i> Settings</a>
+                </li>
+                <li>
+                    <a href="login.html" class="waves-effect">
+                        <i class="material-icons">power_settings_new</i> Logout</a>
+                </li>
             </ul>
-          </div>
         </div>
-      </nav>
-
+    </div>
+</nav>
     </div>
 
       
@@ -79,7 +105,7 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-content">
-                  <span class="card-title">Patients</span>
+                  <span class="card-title">Dr Rajesh's Patients</span>
                   <table class="striped">
                     <thead>
                       <tr>
@@ -94,7 +120,7 @@
                     <tbody>
                       <tr>
                         <td width="70">
-                          <img src="./images/p1.jpg
+                          <img src="./images/patient.jpg
                               " alt="" class="responsive-img circle" style="width: 40px; margin-left: 10px;height:20;">
                         </td>
                         <td>Vishandas Mehta</td>
@@ -149,7 +175,7 @@
                     <li class="disabled">
                       <a href="#" class="blue-text">
                         <i class="material-icons">chevron_left</i>
-                      </a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                      </a>                                                                                                                       
                     </li>
                     <li class="active blue lighten-2">
                       <a href="#" class="white-text number">1</a>
@@ -182,7 +208,7 @@
     
     
       <!-- FOOTER -->
-      <div style="background-color:rgba(226, 110, 110, 1)">
+      <div style="background-color:rgba(226, 110, 110)">
       <footer class="section white-text center" >
         <p>Vriddha Seva Panel Copyright &copy; 2019</p>
       </footer>

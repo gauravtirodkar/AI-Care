@@ -32,9 +32,9 @@
   if(array_key_exists('abcd',$_SESSION))
    if($_SESSION['abcd']==1){
   ?>
-	<div class="container-fluid fixed-top">
-		<div class="row">
-			<div class="ml-auto col-auto alert alert-warning alert-dismissible fade show" role="alert">
+	<div class="container-fluid fixed-top ">
+		<div class=row>
+			<div class=" ml-auto col-auto alert alert-warning alert-dismissible fade show" role="alert">
 				<strong><b>KEEP CALM!</b></strong> <br> You symptoms have been forwarded to your doctor.
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -103,7 +103,7 @@
 							<i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
 					</li>
 					<li>
-						<a href="medical.php">
+						<a href="commments.html">
 							<img src="./images/accident.png" class="mr-4"> Fall Detection</a>
 					</li>
 					<li>
@@ -128,42 +128,6 @@
 			</div>
 		</div>
 	</nav>
-
-	<!-- Notification -->
-	<br>
-
-	<section id="reminder">
-	<div class="container">
-  		<div class="jumbotron" style="padding:3px 50px 3px 50px;">
-		  <h4 style="text-align:center;">Reminders</h4>
-		  </div>
-		
-		<div class="alert alert-success alert-dismissible">
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-			<strong>Success!</strong> You have successfully completed your morning walk of 30 mins!!
-		</div>
-		<div class="alert alert-info alert-dismissible">
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-			<strong>Info!</strong> You have an appointment with your dentist.
-		</div>
-		<div class="alert alert-warning alert-dismissible">
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-			<strong>Warning!</strong> You missed your monthly health check-up.
-		</div>
-		<div class="alert alert-danger alert-dismissible">
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-			<strong>Warning!</strong> You are not regular with your morning blood-pressure dose.
-		</div>
-		<div class="alert alert-primary alert-dismissible">
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-			<strong>New Task!</strong> Drink 3 litres of water and sleep for 8 hours.
-		</div>
-		</div>
-		<br>
-	</div>
-
-	
-	</section>
 	<!-- SECTION: STATS -->
 	<section class="section section-stats center">
 		<div class="container">
@@ -268,14 +232,13 @@
 						<li class="collection-item">
 							<div style="color:green;">Diuretics (twice a day) - Dr Nutan Desai
 								<a href="#" class="secondary-content delete">
-									<i class="material-icons">close</i>
+									<!-- <i class="material-icons">close</i> -->
 								</a>
 							</div>
 						</li>
 						<li class="collection-item">
 							<div style="color:green;">Beta Blockers (after breakfast)-By Dr Nutan Desai
 								<a href="#" class="secondary-content delete">
-									<i class="material-icons">close</i>
 								</a>
 							</div>
 						</li>
@@ -283,7 +246,7 @@
 							<div style="color:green;">ACE inhibitors (2 times a day- 
 							By Dr Mahesh Bhatia
 								<a href="#" class="secondary-content delete">
-									<i class="material-icons">close</i>
+								
 								</a>
 							</div>
 						</li>
@@ -291,28 +254,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="col s12 m6 l6">
-			<div class="card">
-				<div class="card-content">
-					<span class="card-title">To DOs</span>
-					<form id="todo-form">
-
-					</form>
-					<ul class="collection todos">
-						<li class="collection-item">
-							<div style="color:green;">Walks (twice a day)
-								<a href="#" class="secondary-content delete">
-									<i class="material-icons">close</i>
-								</a>
-							</div>
-						</li>
-						<li class="collection-item">
-							<div style="color:green;">Yoga 
-								<a href="#" class="secondary-content delete">
-									<i class="material-icons">close</i>
-								</a>
-							</div>
-						</li>
+    <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Quick Todos</span>
+              <form id="todo-form">
+                <div class="input-field">
+                  <input type="text" id="todo" placeholder="Add Todo">
+                </div>
+              </form>
+              <ul class="collection todos">
+                <li class="collection-item">
+                  <div>Todo One
+                    <a href="#" class="secondary-content delete">
+                      <i class="material-icons">close</i>
+                    </a>
+                  </div>
+                </li>
+                <li class="collection-item">
+                  <div>Todo Two
+                    <a href="#" class="secondary-content delete">
+                      <i class="material-icons">close</i>
+                    </a>
+                  </div>
+                </li>
+                <li class="collection-item">
+                  <div>Todo Three
+                    <a href="#" class="secondary-content delete">
+                      <i class="material-icons">close</i>
+                    </a>
+                  </div>
+                </li>
 						
 					</ul>
 				</div>
@@ -321,6 +293,22 @@
 	</div>
 
 </section>
+
+      <!-- ADD CATEGORY MODAL -->
+      <div id="category-modal" class="modal">
+        <div class="modal-content">
+          <h4>Add Category</h4>
+          <form>
+            <div class="input-field">
+              <input type="text" id="category-title">
+              <label for="category-title">Title</label>
+            </div>
+          </form>
+          <div class="modal-footer">
+            <a href="#" class="modal-action modal-close btn blue white-text">Submit</a>
+          </div>
+        </div>
+      </div>
 	
 	<section id="map">
 	<div class="container">
@@ -332,19 +320,32 @@
 		height="480"></iframe>
 		</section>
 
-		<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d4c0a80e5ae967ef80f15ef/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+      <!-- FIXED ACTION BUTTON -->
+      <div class="fixed-action-btn">
+        <a href="#user-modal"class="modal-trigger btn-floating btn-large ">
+          Generate Ticket
+        </a>
+      </div>
+      <!-- ADD USER MODAL -->
+      <div id="user-modal" class="modal">
+        <div class="modal-content">
+          <h4>Generate Ticket</h4>
+          <form>
+            <div class="input-field">
+              <input type="text" id="name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="name">
+              <label for="name">Query</label>
+            </div>
+          </form> 
+          
+            <a href="#" style="text-align:center;" class=" modal-action modal-close btn blue white-text">Submit</a>
+          </div>
+
+      </div>
+    
 
 
 	<!-- FOOTER -->
@@ -370,22 +371,22 @@ s0.parentNode.insertBefore(s1,s0);
 		</div>
 
 		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-		</script>
-		<!--Import jQuery before materialize.js-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-		<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
-		<script src="js/charts.js"></script>
-		<script src="js/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/chart.js"></script>
 
 		<script>
 			// Custom JS & jQuery here
@@ -442,11 +443,12 @@ s0.parentNode.insertBefore(s1,s0);
 					});
 				});
 
-				// QUICK TODOS
-				$('#todo-form').submit(function (e) {
-					// console.log($('#todo').val());
+			
+  // QUICK TODOS
+  $('#todo-form').submit(function (e) {
+    // console.log($('#todo').val());
 
-					const output = `
+    const output = `
       <li class="collection-item">
         <div>${$('#todo').val()}
           <a href="#" class="secondary-content delete">
@@ -455,39 +457,37 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
       </li>
     `;
-					// in the output variable we're storing what the user has entered in the input filed
+    // in the output variable we're storing what the user has entered in the input filed
 
-					$('.todos').append(output);
-					// appending to our todo list so it shows in the UI
+    $('.todos').append(output);
+    // appending to our todo list so it shows in the UI
 
-					$('#todo').val('');
-					// clear input field
+    $('#todo').val('');
+    // clear input field
 
-					Materialize.toast('Todo Added', 3000);
-					// show a notification that the todo has been added
+    Materialize.toast('Todo Added', 3000);
+    // show a notification that the todo has been added
 
-					e.preventDefault();
-					// we want to prevent the form from actually submiting
-				});
+    e.preventDefault();
+    // we want to prevent the form from actually submiting
+  });
 
-				// DELETE TODOS
-				$('.todos').on('click', '.delete', function (e) {
-					// $(this).parent().parent().remove();
-					$(this).parent().parent().animate().fadeOut();
-					// event delegation
+  // DELETE TODOS
+  $('.todos').on('click', '.delete', function (e) {
+    // $(this).parent().parent().remove();
+    $(this).parent().parent().animate().fadeOut();
+    // event delegation
 
-					Materialize.toast('Medicine Taken', 3000);
-					// show a notification that the todo has been deleted
+    Materialize.toast('Todo Removed', 3000);
+    // show a notification that the todo has been deleted
 
-					e.preventDefault();
-				});
+    e.preventDefault();
+  });
 
-				// FOR THE CKEDITOR
-				CKEDITOR.replace('body');
+  // FOR THE CKEDITOR
+  CKEDITOR.replace('body');
 
-			}, 1000);
-			// PRELOADER
-
+}, 1000);
 
 			var config = {
 				type: 'line',

@@ -1,6 +1,6 @@
-<?php
+ <?php
 session_start();
-?>
+?> 
 <!DOCTYPE html>
 <html>
 
@@ -17,17 +17,24 @@ session_start();
 	<link type="text/css" rel="stylesheet" href="css/styles.css" />
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>वृद्ध सेवा</title>
+	<title>VridhhaSeva</title>
 </head>
 
 <body>
+
 	<!-- NAVIGATION -->
 	<nav class="red darken-2">
 		<div class="container">
 			<div class="nav-wrapper">
-				<a href="index.html" class="brand-logo">Hello, Dr.Rajesh</a>
+			<a class="navbar-brand" href="index.html" style="font-size: 25px;"><img src="./images/logo.png" style ="height: 70px; padding:8px; color: transparent;" alt=""> </a>
 				<a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-				
+				<i class="material-icons">menu</i>
+            </a>
+			<ul class="right hide-on-med-and-down">
+			<li>
+              <a href="./recommend.html">Recommend to a doctor</a>
+			</li>
+			</ul>
 				<!-- Side nav -->
 				<ul id="side-nav" class="side-nav">
 					<li>
@@ -85,6 +92,17 @@ session_start();
 		</div>
 
 	</nav>
+	<!-- <?php
+	echo '<div class="alert alert-success alert-dismissable" id="flash-msg">
+<button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+<h4><i class="icon fa fa-check"></i>Success!</h4>
+</div>';
+?>
+<script>
+$(document).ready(function () {
+    $("#flash-msg").delay(3000).fadeOut("slow");
+});
+</script> -->
 
 
 	<!-- SECTION: STATS -->

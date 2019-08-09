@@ -19,25 +19,16 @@
 <nav class="blue darken-2">
     <div class="container">
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">Hello, John Doe</a>
+         <a class="navbar-brand" href="index.html" style="font-size: 25px;"><img src="./images/logo.png" style ="height: 70px; padding:8px; color: transparent;" alt=""> </a>
             <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
+             <li>
+                    <a href="index.html">Home</a>
+                </li>
                 <li class="active">
-                    <a href="index.html">Dashboard</a>
-                </li>
-                <li>
-                    <a href="posts.html">Posts</a>
-                </li>
-                <li>
-                    <a href="categories.html">Categories</a>
-                </li>
-                <li>
-                    <a href="comments.html">Comments</a>
-                </li>
-                <li>
-                    <a href="users.html">Users</a>
+                    <a href="medical.php">Dashboard</a>
                 </li>
             </ul>
             <!-- Side nav -->
@@ -51,10 +42,10 @@
                             <img src="./images/old_person.jpeg" alt="" class="circle">
                         </a>
                         <a href="#">
-                            <span class="name white-text">John Doe</span>
+                            <span class="name white-text">Vishandas Mehta</span>
                         </a>
                         <a href="#">
-                            <span class="email white-text">jdoe@gmail.com</span>
+                            <span class="email white-text">vishandas_mehta58@gmail.com</span>
                         </a>
                     </div>
                 </li>
@@ -71,7 +62,7 @@
                         <i class="fa fa-2x fa-heartbeat"></i> Heart Rate</a>
                 </li>
                 <li>
-                    <a href="commments.html">
+                    <a href="medical.php">
                         <img src="./images/accident.png" class="mr-4"> Fall Detection</a>
                 </li>
                 <li>
@@ -96,9 +87,6 @@
         </div>
     </div>
 </nav>
-<div id="chartContainer" style="height: 300px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
 <!-- SECTION: VISITORS -->
 <!--MAIN HEART-RATE PATTERN DETECTION SECTION-->
 <section class="section section-visitors blue lighten-4">
@@ -106,7 +94,8 @@
         <!-- Chart -->
         <div class="col-md-9">
             <div class="card-panel">
-                <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+               <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
             </div>
         </div>
 
@@ -305,7 +294,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 });
 
 var xVal = 0;
-var yVal = 100; 
+var yVal = 70; 
 var updateInterval = 1000;
 var dataLength = 20; // number of dataPoints visible at any point
 
