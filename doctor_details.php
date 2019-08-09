@@ -139,7 +139,7 @@ session_start();
           $file = file_get_contents('DiseasePrediction/disease.txt');
           ?>
 
-		<div class="card">
+		<div class="card" id=ca>
 			<div class=card-header>
 				<h3>Predicted Ailment:&nbsp; <b><?php echo $file;?></b></h3>
 			</div>
@@ -220,9 +220,9 @@ session_start();
 
 
 			</div>
-			<div class="row mx-auto">
-				<button class="btn btn-success btn-md">Approve</button> &nbsp;
-				<button class='btn btn-danger btn-md'>Decline</button>
+			<div id=r class="row mx-auto">
+				<button id=ap class="btn btn-success btn-md">Approve</button> &nbsp;
+				<button id=de class='btn btn-danger btn-md'>Decline</button>
 			</div>
 		</div>
 
@@ -303,6 +303,20 @@ session_start();
 	<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
 	<script src="js/charts.js"></script>
 
+	<script>
+	$('#ap').click(
+		function(){
+			$('#r').hide();
+		}
+	);
+
+	$('#de').click(
+		function(){
+			$('#r').hide();
+			$('#ca').hide();
+		}
+	);
+	</script>
 
 	<script>
 		// Custom JS & jQuery here
@@ -409,7 +423,7 @@ session_start();
 			new Chart(ctx, config);
 		}
 
-		callgraph( < ? php echo $data; ? > , < ? php echo $label; ? > )
+		callgraph( <?php echo $data; ?> , <?php echo $label; ?> )
 	</script>
 </body>
 
