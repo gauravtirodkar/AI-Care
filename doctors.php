@@ -130,6 +130,7 @@
                           <a href=" <?php echo $loc; ?>" class="btn btn-sm" style="background-color: rgb(25, 150, 56)">Details</a>
 
                         </td>
+                        <td><span class="badge badge-danger text-white">Emergency!!!</span></td>
                       </tr>
                       <tr>
                         <td width="70">
@@ -142,6 +143,7 @@
                         <td>
                           <a href=" <?php echo $loc; ?>" class="btn btn-sm" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td width="70">
@@ -154,6 +156,7 @@
                         <td>
                           <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td width="70">
@@ -166,6 +169,7 @@
                         <td>
                           <a href=" <?php echo $loc; ?>" class="btn" style="background-color: rgb(25, 150, 56)">Details</a>
                         </td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
