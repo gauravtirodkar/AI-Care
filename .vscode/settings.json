@@ -13,5 +13,6 @@
         "statusBarItem.hoverBackground": "#abc15a",
         "statusBar.foreground": "#15202b"
     },
-    "peacock.color": "#becf7f"
+    "peacock.color": "#becf7f",
+    "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Anaconda3_64\\python.exe"
 }
